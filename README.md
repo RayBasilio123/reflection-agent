@@ -20,6 +20,14 @@ Este projeto utiliza **LangChain**, **LangGraph** e modelos de IA (como Gemini e
 
 ---
 
+## **Visualização do Fluxo**
+
+Abaixo está uma representação visual do fluxo do agente:
+
+![Fluxo do Reflection Agent](grafo_mermaid.png)
+
+---
+
 ## **Pré-requisitos**
 
 - **Python**: Versão 3.10 ou superior.
