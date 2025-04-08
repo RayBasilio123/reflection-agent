@@ -1,0 +1,51 @@
+
+Mensagem 1 (HumanMessage): Você fornece o tweet original que deseja melhorar.​
+
+Mensagem 2 (AIMessage): O nó de geração (generate_node) cria uma versão aprimorada do tweet original.​
+
+Mensagem 3 (AIMessage): O nó de reflexão (reflect_node) avalia o tweet gerado, oferecendo uma análise e recomendações para melhorias adicionais.​
+
+Mensagem 4 (AIMessage): Com base nas recomendações, o nó de geração propõe uma nova versão do tweet.​
+
+Mensagem 5 (AIMessage): O nó de reflexão fornece recomendações detalhadas, como hashtags relevantes para aumentar o alcance do tweet.​
+
+Mensagem 6 (AIMessage): Uma versão final do tweet é apresentada, incorporando todas as melhorias e sugestões anteriores.
+
+---------------------------------------------------------------------------
+Passo 1 – Entrada Inicial:
+
+Input: Mensagem humana com o texto original.
+
+Output: Essa mensagem entra no estado final.
+
+Passo 2 – Geração (nó de geração):
+
+Input: O estado contendo a mensagem inicial.
+
+Output: O modelo gera a mensagem que melhora o tweet (Mensagem 2).
+
+Passo 3 – Reflexão (nó de reflexão):
+
+Input: O estado agora contém a Mensagem 1 e a Mensagem 2.
+
+Output: O modelo retorna uma avaliação e recomendações (Mensagem 3).
+
+Passo 4 – Nova Geração:
+
+Input: O estado contém (Mensagem 1, Mensagem 2, Mensagem 3).
+
+Output: O modelo gera uma nova versão refinada do tweet (Mensagem 4).
+
+Passo 5 – Nova Reflexão:
+
+Input: O estado contém (Mensagem 1, Mensagem 2, Mensagem 3, Mensagem 4).
+
+Output: O modelo fornece recomendações adicionais ou uma avaliação (Mensagem 5).
+
+Passo 6 – Última Iteração (que dispara a condição de parada):
+
+Input: O estado contém 5 mensagens; a condição de parada está configurada para quando o estado tiver 6 ou mais mensagens.
+
+Output esperado: O nó (geração ou reflexão, dependendo de como o grafo está encadeado) deve gerar a Mensagem 6, que idealmente seria o tweet final pronto para publicação.
+
+------------------------------------------------------------------------
